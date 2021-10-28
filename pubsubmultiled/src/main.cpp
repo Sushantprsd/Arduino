@@ -8,4 +8,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+    if (digitalRead(buttonPin) == HIGH) {
+    Serial.write('H');
+  }
+  else {
+    Serial.write('L');
+  }
+
+  delay(1000);
 }
